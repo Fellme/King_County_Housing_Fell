@@ -54,15 +54,23 @@ Takeaways:
 ***************************************
 ## Modeling
 Before running a model I split my data into categorical and numerical. The categorical data included `waterfront`,`condition`,`grade`,`greenbelt`,`nuisance`,`view`,`heat_source`,'sewer_system`,`month`, and  `renovated`. I used the one-hot endcoded technique to provide dummy values for modeling. After running separate Simple Linear Regressions on each variable, I selected those with the highest r-squared values. 
-![image](https://user-images.githubusercontent.com/20844445/228369812-a8744a98-9bf2-4a9b-8129-59fe0521e4ff.png)
+
+> Highest R-Squared Numerical Features Highest to Lowest
+> 
+> Sqft_living
+> Bathrooms
+> Latitude
+> Bedrooms
+> Sqft_basement
+
+Grade was the only categorical feature of significance. Looking at the boxplots for Grade vs. Price we can see the higher ranking provides a better range of pricing. Moving grades could be achieved by having teams focus on improving the highly ranked numerical features. 
+
+![image](https://user-images.githubusercontent.com/20844445/228371395-22f817d4-90e8-41dc-b046-701e5fa65422.png)
 
 
-The only categorical value with a high correlation to price was `grade`
-![image](https://user-images.githubusercontent.com/20844445/228370122-c92095de-8137-4339-b095-6525be04bd0a.png)
+### Final Model
 
-This tells our stakeholders to focus again on the home itself rather than exterior features.
 
-### Baseline Model
 
 ****************************************
 ## Conclusion and Follow-up
