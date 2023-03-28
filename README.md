@@ -53,7 +53,7 @@ Takeaways:
 - The living space (`sqft_living`) has the highest correlation to price. This means we want to prioritize maximizing the actual home versus the increasing the size of the yard. Since bathrooms outranked bedrooms in correlation, I would suggest having crews focus on updating or adding bathrooms to the home if renovating. If they are trying to sell the home or purchase a new one, then I would prioritize highlighting bathrooms 
 ***************************************
 ## Modeling
-Before running a model I split my data into categorical and numerical. The categorical data included `waterfront`,`condition`,`grade`,`greenbelt`,`nuisance`,`view`,`heat_source`,'sewer_system`,`month`, and  `renovated`. I used the one-hot endcoded technique to provide dummy values for modeling. After running separate Simple Linear Regressions on each variable, I selected those with the highest r-squared values. 
+Before running a model I split my data into categorical and numerical. The categorical data included `waterfront`,`condition`,`grade`,`greenbelt`,`nuisance`,`view`,`heat_source`,'sewer_system`,`month`, and  `renovated`. I used the one-hot endcoded technique to provide dummy values for modeling. After running seperate Linear Regressions on each variable, I selected those with the highest r-squared values. 
 
 > Highest R-Squared Numerical Features Highest to Lowest
 > 
@@ -67,8 +67,7 @@ Grade was the only categorical feature of significance. Looking at the boxplots 
 
 ![image](https://user-images.githubusercontent.com/20844445/228371395-22f817d4-90e8-41dc-b046-701e5fa65422.png)
 
-
-### Final Model
+### Model One
 
 
 
