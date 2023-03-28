@@ -21,11 +21,12 @@ Our data set has 30, 155 entries spanning 24 columns. The homes in the list were
 
 ### Number of Available Homes for Renovations
 ![image](https://user-images.githubusercontent.com/20844445/228362123-567d2aa4-1d83-4cee-9d21-4bb6f8aba2db.png)
-Answering part of your first question, there is a substantial supply of homes that have not been renovated.
+
+Answering part of our first question, there is a substantial supply of homes that have not been renovated.
 ### Pricing Differences between Renovated Homes and Non-Renovated Homes
 ![image](https://user-images.githubusercontent.com/20844445/228362323-98886e71-0fa7-4d5f-87ce-be825c873191.png)
 
-There is a 27% increase in homes that have been renovated. I would recommend sending crews from renovation centered shows. 
+There is a 27% increase in homes that have been renovated. I would recommend sending crews from renovation centered shows and setting aside a budget item for renovations. 
 
 ### Trend in Home Price Compared to Age of Home
 ![image](https://user-images.githubusercontent.com/20844445/228363845-69d99914-f970-4f73-8999-92c9569e88d1.png)
@@ -36,15 +37,32 @@ When deciding which homes to renovate, we can visualize how price fluctuates whe
 Our target variable for this project is **price**. We need to check our cleaned data for potential colinearity as this could throw off the results of our model. We can also use the Pearson Correlations listed to determine the features who are strongly correlated to our target. This help our teams understand what to focus on when forming a budget and choosing features to highlight in the script
 ![image](https://user-images.githubusercontent.com/20844445/228365695-fd9a0b40-84d0-4fb4-91cf-90263e6b822b.png)
 >Correlation to Price in Highest to Lowest Order
+>
 >Sqft_living 0.65
+>
 >Sqft_above 0.58
+>
 >Bathrooms 0.52
->bedrooms 0.34
+>
+>Bedrooms 0.34
+>
 >sqft_patio 0.31
+>
 
+Takeaways:
+- The living space (`sqft_living`) has the highest correlation to price. This means we want to prioritize maximizing the actual home versus the increasing the size of the yard. Since bathrooms outranked bedrooms in correlation, I would suggest having crews focus on updating or adding bathrooms to the home if renovating. If they are trying to sell the home or purchase a new one, then I would prioritize highlighting bathrooms 
 ***************************************
 ## Modeling
+Before running a model I split my data into categorical and numerical. The categorical data included `waterfront`,`condition`,`grade`,`greenbelt`,`nuisance`,`view`,`heat_source`,'sewer_system`,`month`, and  `renovated`. I used the one-hot endcoded technique to provide dummy values for modeling. After running separate Simple Linear Regressions on each variable, I selected those with the highest r-squared values. 
+![image](https://user-images.githubusercontent.com/20844445/228369812-a8744a98-9bf2-4a9b-8129-59fe0521e4ff.png)
 
+
+The only categorical value with a high correlation to price was `grade`
+![image](https://user-images.githubusercontent.com/20844445/228370122-c92095de-8137-4339-b095-6525be04bd0a.png)
+
+This tells our stakeholders to focus again on the home itself rather than exterior features.
+
+### Baseline Model
 
 ****************************************
 ## Conclusion and Follow-up
