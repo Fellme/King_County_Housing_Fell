@@ -128,8 +128,10 @@ For more information email: Morgan Fell (morgan13.fell@gmail.com)
 
 **Repository Structure**
 ```
+├── King_Country_Linear_Regression.ipynb                      <- Narrative documentation of analysis in Jupyter notebook
 ├── Map.ipynb                                                 <- Documentation for Map in Jupyter Notebook
-├── King_Country_Housing_Analysis.ipynb                       <- Narrative documentation of analysis in Jupyter notebook
 ├── README.md                                                 <- The README for reviewers of this project
+├── Column Headers.md                                         <- Detailed listing of the columns in the CSV file
+├── King_county_house.csv                                     <- King County Housing data file
 └── presentation.pdf                                          <- PDF version of project presentation
 ```
