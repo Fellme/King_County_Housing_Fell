@@ -127,7 +127,9 @@ As filming begins, HGTV will want to focus on improving and/or increasing the li
 For more information email: Morgan Fell (morgan13.fell@gmail.com)
 
 **Repository Structure**
+```
 ├── Map.ipynb                                                 <- Documentation for Map in Jupyter Notebook
 ├── King_Country_Housing_Analysis.ipynb                       <- Narrative documentation of analysis in Jupyter notebook
 ├── README.md                                                 <- The README for reviewers of this project
 └── presentation.pdf                                          <- PDF version of project presentation
+```
