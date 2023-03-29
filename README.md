@@ -16,7 +16,7 @@ Before filming begins, HGTV completes research to provide scripts, potential inv
 
 *****************************************
 ## Data Understanding
-Our data set has 30, 155 entries spanning 24 columns. The homes in the list were built between 1975 and 2022. You will find a detailed list of the columns below. Before starting the data provided a warning about outliers being expected in the location, so we will want to ensure the homes we're including in our model are only from King County. 
+Our data set has 30,155 entries spanning 24 columns. The homes in the list were built between 1900 and 2022. You will find a detailed list of the columns below. Before starting the data provided a warning about outliers being expected in the location, so we will want to ensure the homes we're including in our model are only from King County. 
 ### Column Names and Descriptions for King County Data Set
    * `id` - Unique identifier for a house ,
    * `date` - Date house was sold ,
