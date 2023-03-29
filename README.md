@@ -94,7 +94,7 @@ I split my data into categorical and numerical. The categorical data included `w
 > Bedrooms
 > Sqft_basement
 
-After adjusting the columns in the categorical data. I applied a similar set of simple linear regressions. Grade was the only categorical feature of significance. Looking at the boxplots for Grade vs. Price we can see the higher ranking provides a better range of pricing. Moving grades could be achieved by having teams focus on improving the highly ranked numerical features. 
+After adjusting the columns in the categorical data, I applied a similar set of simple linear regressions. Grade was the only categorical feature of significance. Looking at the boxplots for Grade vs. Price we can see the higher ranking provides a better range of pricing. Moving grades could be achieved by having teams focus on improving the highly ranked numerical features. 
 
 ![image](https://user-images.githubusercontent.com/20844445/228371395-22f817d4-90e8-41dc-b046-701e5fa65422.png)
 
